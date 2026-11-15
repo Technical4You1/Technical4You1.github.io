@@ -14,3 +14,4 @@ function toggleDetails(btn) {
 
 // Open the Home page on load
 showPage('home');
+
