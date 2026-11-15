@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kashif Raza | SAP Basis Consultant</title>
+  <meta name="description" content="SAP Basis Consultant: SAP HANA, S/4HANA, free and premium SOPs, portfolio and freelance services.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <span class="logo" onclick="showPage('home')">Kashif Raza</span>
+    <nav class="tabs">
+      <button class="tab-btn" data-page="sop" onclick="showPage('sop')">SAP Library</button>
+      <button class="tab-btn" data-page="portfolio" onclick="showPage('portfolio')">Portfolio</button>
+      <button class="tab-btn" data-page="experience" onclick="showPage('experience')">Experience</button>
+      <button class="tab-btn" data-page="resume" onclick="showPage('resume')">Resume</button>
+      <button class="tab-btn" data-page="contact" onclick="showPage('contact')">Contact</button>
+      <button class="tab-btn premium" data-page="premium" onclick="showPage('premium')">Premium Library</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <div class="page show" id="home">
+    <div class="hero">
+      <h1>Kashif Raza</h1>
+      <p class="role">SAP Basis Consultant | SAP HANA | S/4HANA</p>
+      <p>[Write 2-3 lines about your experience, focus areas, and what you offer clients and readers.]</p>
+      <div style="margin-top:20px;">
+        <a class="btn btn-white" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">View LinkedIn</a>
+        <button class="btn btn-outline" onclick="showPage('resume')">Download Resume</button>
+        <button class="btn btn-outline" onclick="showPage('contact')">Hire for Freelance Work</button>
+      </div>
+    </div>
+
+    <h2>Professional Details</h2>
+    <div class="grid">
+      <div class="card"><h3>Role</h3><p>SAP Basis Consultant</p></div>
+      <div class="card"><h3>Experience</h3><p>[X] years in SAP Basis</p></div>
+      <div class="card"><h3>Location</h3><p>Ranchi, Jharkhand, India</p></div>
+      <div class="card"><h3>Email</h3><p>Shown in the Contact tab</p></div>
+    </div>
+
+    <h2 style="margin-top:40px;">Core Skills</h2>
+    <div class="skills">
+      <span>SAP Basis</span><span>SAP HANA DBA</span><span>S/4HANA Upgrade</span><span>SUSE Linux</span>
+      <span>Windows Server</span><span>AWS</span><span>Azure</span><span>Python</span><span>Networking</span>
+    </div>
+
+    <h2 style="margin-top:40px;">Project Highlights</h2>
+    <div class="grid">
+      <div class="card"><h3>S/4HANA Upgrade</h3><p>[Scope, your role, and outcome. No client names.]</p></div>
+      <div class="card"><h3>HANA Database Administration</h3><p>[Backup and recovery, monitoring, performance tuning.]</p></div>
+      <div class="card"><h3>SOP Documentation</h3><p>Reusable runbooks for common Basis incidents, shared on LinkedIn and this site.</p></div>
+    </div>
+
+    <h2 style="margin-top:40px;">Freelance Work</h2>
+    <div class="card light">
+      <p>Available for SAP Basis support, HANA administration, S/4HANA upgrade planning, and custom SOP writing.</p>
+      <button class="btn btn-blue" onclick="showPage('contact')">Send a Project Request</button>
+    </div>
+  </div>
+
+  <!-- SAP LIBRARY (FREE) -->
+  <div class="page" id="sop">
+    <h2>SAP Library (Free)</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="tag free">FREE</span>
+        <h3>Handling an SAP HANA Backup Failure</h3>
+        <p>8-step checklist: check the catalog, disk space, permissions, logs, re-run, and verify.</p>
+        <a class="btn btn-blue" href="sops/hana-backup-failure.pdf" download>Download Free</a>
+      </div>
+      <div class="card">
+        <span class="tag free">FREE</span>
+        <h3>Transport Import Failure Checklist</h3>
+        <p>[Short description. Coming soon.]</p>
+        <button class="btn btn-blue" onclick="showPage('contact')">Notify Me</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO -->
+  <div class="page" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="grid">
+      <div class="card"><h3>S/4HANA Upgrade</h3><p>[General scope, your role, and outcome.]</p></div>
+      <div class="card"><h3>HANA Database Administration</h3><p>[Backup and recovery, monitoring, patching.]</p></div>
+      <div class="card"><h3>Cloud Infrastructure</h3><p>[AWS or Azure work, if applicable.]</p></div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="page" id="experience">
+    <h2>Experience &amp; Certifications</h2>
+    <div class="timeline">
+      <div class="item">
+        <h3>SAP Basis Consultant - [Company]</h3>
+        <small>[Start year] - Present</small>
+        <p>[Key responsibilities and achievements.]</p>
+      </div>
+      <div class="item">
+        <h3>[Previous Role] - [Company]</h3>
+        <small>[Years]</small>
+        <p>[Key responsibilities.]</p>
+      </div>
+      <div class="item">
+        <h3>Certifications</h3>
+        <p>[List your certifications.]</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESUME -->
+  <div class="page" id="resume">
+    <h2>Resume</h2>
+    <p>Download my latest resume as a PDF.</p>
+    <p style="margin-top:14px;"><a class="btn btn-blue" href="resume.pdf" download>Download Resume (PDF)</a></p>
+    <p style="margin-top:14px;"><a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">View full profile on LinkedIn</a></p>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="page" id="contact">
+    <h2>Contact &amp; Freelance Requests</h2>
+    <p>Email: <a href="mailto:kashifmup@gmail.com">kashifmup@gmail.com</a></p>
+    <p style="margin:8px 0 20px;">LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">View profile</a></p>
+    <form action="mailto:kashifmup@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your name" required>
+      <input type="email" name="Email" placeholder="Your email" required>
+      <textarea name="Message" rows="5" placeholder="Describe your project or question" required></textarea>
+      <button class="btn btn-blue" type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- PREMIUM LIBRARY -->
+  <div class="page" id="premium">
+    <h2>Premium Library</h2>
+    <div class="grid">
+
+      <div class="card">
+        <span class="tag paid">PREMIUM</span>
+        <h3>S/4HANA Upgrade Runbook</h3>
+        <p>Step-by-step runbook for planning and running an S/4HANA upgrade.</p>
+        <button class="btn btn-gold" onclick="toggleDetails(this)">View Details</button>
+        <div class="details">
+          <p><strong>Description:</strong> [Full description of what the SOP covers.]</p>
+          <p><strong>Number of pages:</strong> [X] pages</p>
+          <div class="email-box">
+            <p>To get this SOP, email <strong>kashifmup@gmail.com</strong></p>
+            <a class="btn btn-blue" href="mailto:kashifmup@gmail.com?subject=Request%20for%20S%2F4HANA%20Upgrade%20Runbook">Send Message</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="tag paid">PREMIUM</span>
+        <h3>SAP Basis Daily Health Check Pack</h3>
+        <p>Daily checklist and monitoring SOPs for SAP Basis administrators.</p>
+        <button class="btn btn-gold" onclick="toggleDetails(this)">View Details</button>
+        <div class="details">
+          <p><strong>Description:</strong> [Full description of what the SOP covers.]</p>
+          <p><strong>Number of pages:</strong> [X] pages</p>
+          <div class="email-box">
+            <p>To get this SOP, email <strong>kashifmup@gmail.com</strong></p>
+            <a class="btn btn-blue" href="mailto:kashifmup@gmail.com?subject=Request%20for%20SAP%20Basis%20Daily%20Health%20Check%20Pack">Send Message</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 Kashif Raza. SOPs are generic guides. Follow your organization's policies before applying them.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
